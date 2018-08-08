@@ -5,7 +5,7 @@ import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 
 
-public class mainPageController {
+public class MainPageController {
 
     @FXML
     private JFXButton plansButton;
@@ -34,7 +34,7 @@ public class mainPageController {
 
     @FXML
     void onExitButtonClicked(ActionEvent event) {
-        
+
     }
 
     @FXML
