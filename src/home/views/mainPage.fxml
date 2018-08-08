@@ -51,5 +51,6 @@
             </Pane>
          </children>
       </Pane>
+      <Pane fx:id="switchPane" layoutX="200.0" prefHeight="540.0" prefWidth="760.0" />
    </children>
 </AnchorPane>
