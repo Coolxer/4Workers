@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.views.RegisterPage">
+   <children>
+      <Label layoutX="412.0" layoutY="40.0" text="REGISTER" textFill="WHITE">
+         <font>
+            <Font name="Haettenschweiler" size="50.0" />
+         </font>
+      </Label>
+      <Label layoutX="434.0" layoutY="120.0" text="username" textFill="#0099ff">
+         <font>
+            <Font name="Haettenschweiler" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="usernameField" layoutX="327.0" layoutY="150.0" prefHeight="25.0" prefWidth="300.0" unFocusColor="WHITE" />
+      <Label layoutX="430.0" layoutY="200.0" text="password" textFill="#0099ff">
+         <font>
+            <Font name="Haettenschweiler" size="30.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="passwordField" layoutX="326.0" layoutY="230.0" prefHeight="25.0" prefWidth="300.0" unFocusColor="WHITE" />
+      <Label layoutX="391.0" layoutY="280.0" text="confirm password" textFill="#0099ff">
+         <font>
+            <Font name="Haettenschweiler" size="30.0" />
+         </font>
+      </Label>
+      <JFXPasswordField fx:id="confirmPasswordField" layoutX="326.0" layoutY="310.0" prefHeight="25.0" prefWidth="300.0" unFocusColor="WHITE" />
+      <Label layoutX="449.0" layoutY="360.0" text="e-mail" textFill="#0099ff">
+         <font>
+            <Font name="Haettenschweiler" size="30.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="emailField" layoutX="326.0" layoutY="390.0" prefHeight="25.0" prefWidth="300.0" unFocusColor="WHITE" />
+      <JFXButton fx:id="signUpButton" layoutX="326.0" layoutY="461.0" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #ff8000;" text="Sign up" textFill="WHITE">
+         <font>
+            <Font name="Haettenschweiler" size="24.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>
