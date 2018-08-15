@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="50.0" prefWidth="640.0" style="-fx-background-color: #00b300;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.views.DonePlanBox">
+   <children>
+      <Label layoutX="50.0" layoutY="10.0" text="Name" textFill="#333333">
+         <font>
+            <Font name="Haettenschweiler" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="planNameField" layoutX="140.0" layoutY="10.0" prefHeight="28.0" prefWidth="280.0" textFill="WHITE">
+         <font>
+            <Font name="Haettenschweiler" size="26.0" />
+         </font>
+      </Label>
+      <JFXToggleButton fx:id="toggleShowButton" layoutX="489.0" layoutY="-2.0" text="Show" toggleColor="#0099ff" />
+   </children>
+</AnchorPane>

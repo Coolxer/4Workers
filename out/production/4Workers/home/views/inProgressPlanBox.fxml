@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="50.0" prefWidth="640.0" style="-fx-background-color: #ff9900;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.views.InProgressPlanBox">
+   <children>
+      <Label layoutX="50.0" layoutY="10.0" text="Name" textFill="#333333">
+         <font>
+            <Font name="Haettenschweiler" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="planNameField" layoutX="140.0" layoutY="10.0" prefHeight="28.0" prefWidth="280.0" textFill="WHITE">
+         <font>
+            <Font name="Haettenschweiler" size="26.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="discardInProgressButton" layoutX="430.0" layoutY="5.0" onAction="#onDiscardInProgressButtonClicked" style="-fx-background-color: #cc0000;" text="Discard" textFill="WHITE">
+         <font>
+            <Font name="Haettenschweiler" size="22.0" />
+         </font></JFXButton>
+      <JFXButton fx:id="doneInProgressButton" layoutX="530.0" layoutY="5.0" onAction="#onDoneInProgressButtonClicked" style="-fx-background-color: #00b300;" text="Done" textFill="WHITE">
+         <font>
+            <Font name="Haettenschweiler" size="22.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

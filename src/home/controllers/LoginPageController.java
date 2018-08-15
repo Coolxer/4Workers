@@ -1,5 +1,6 @@
 package home.controllers;
 import home.database.DatabaseHandler;
+import home.models.User;
 
 import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
@@ -33,6 +34,7 @@ public class LoginPageController {
     private String passwordValue;
 
     DatabaseHandler databaseHandler;
+    User user;
 
     @FXML
     void onSigUpButtonClicked(ActionEvent event) throws IOException {
@@ -46,6 +48,7 @@ public class LoginPageController {
        if(checkFields()){
            databaseHandler = new DatabaseHandler();
            if(databaseHandler.login(usernameValue, passwordValue)){
+                User user = new User(usernameValue, passwordValue);
                anchorPane = FXMLLoader.load(getClass().getResource("/home/views/mainPage.fxml"));
                loginAnchorPane.getChildren().add(anchorPane);
            }

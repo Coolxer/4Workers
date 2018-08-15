@@ -57,7 +57,10 @@
       </Pane>
       <Pane fx:id="switchPane" layoutX="200.0" prefHeight="540.0" prefWidth="660.0" />
       <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="870.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
-      <JFXTextField fx:id="usernameField" layoutX="870.0" layoutY="100.0" prefHeight="25.0" prefWidth="80.0" />
-      <JFXButton fx:id="logOutButton" layoutX="884.0" layoutY="148.0" onAction="#onLogOutButtonClicked" style="-fx-background-color: #0099ff;" text="Log out" />
+      <JFXTextField fx:id="usernameField" editable="false" layoutX="870.0" layoutY="100.0" prefHeight="25.0" prefWidth="80.0" />
+      <JFXButton fx:id="logOutButton" layoutX="871.0" layoutY="147.0" onAction="#onLogOutButtonClicked" style="-fx-background-color: #0099ff;" text="Log out">
+         <font>
+            <Font name="Haettenschweiler" size="22.0" />
+         </font></JFXButton>
    </children>
 </AnchorPane>

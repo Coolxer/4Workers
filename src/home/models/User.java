@@ -1,14 +1,17 @@
 package home.models;
 
+import javax.imageio.stream.ImageInputStream;
+import javax.swing.text.html.ImageView;
+
 public class User {
     private String username;
     private String password;
-    private String email;
+    //private String email;
+    //private ImageView image;
 
-    public User(String username, String password, String email){
+    public User(String username, String password){
         this.username = username;
         this.password = password;
-        this.email = email;
     }
 
     public String getUsername() {
@@ -27,6 +30,7 @@ public class User {
         this.password = password;
     }
 
+    /*
     public String getEmail() {
         return email;
     }
@@ -34,4 +38,10 @@ public class User {
     public void setEmail(String email) {
         this.email = email;
     }
+    */
+    /*
+    public ImageView getImage() { return image; }
+
+    public void setImage(ImageView image) { this.image = image; }
+    */
 }
