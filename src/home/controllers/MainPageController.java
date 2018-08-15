@@ -1,22 +1,21 @@
 package home.controllers;
 
 import com.jfoenix.controls.JFXButton;
+import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
+import javax.swing.text.html.ImageView;
 import java.io.IOException;
 
 
 public class MainPageController {
-
     @FXML
-    private AnchorPane mainContainer;
+    private AnchorPane mainAnchorPane;
 
     @FXML
     private JFXButton plansButton;
@@ -34,8 +33,15 @@ public class MainPageController {
     private JFXButton exitButton;
 
     @FXML
+    private JFXTextField usernameField;
+
+    @FXML
+    private JFXButton logOutButton;
+
+    @FXML
     private Pane switchPane;
 
+    private AnchorPane anchorPane;
     private Pane newPane;
 
     @FXML
@@ -52,7 +58,7 @@ public class MainPageController {
 
     @FXML
     void onExitButtonClicked(ActionEvent event) throws IOException {
-        Stage stage = (Stage) mainContainer.getScene().getWindow();
+        Stage stage = (Stage) mainAnchorPane.getScene().getWindow();
         stage.close();
     }
 
@@ -64,8 +70,16 @@ public class MainPageController {
 
     @FXML
     void onPlansButtonClicked(ActionEvent event) throws IOException {
-        newPane = FXMLLoader.load(getClass().getResource("/home/views/planesPage.fxml"));
+        newPane = FXMLLoader.load(getClass().getResource("/home/views/plansPage.fxml"));
         switchPane.getChildren().add(newPane);
+    }
+
+    @FXML
+    void onLogOutButtonClicked(ActionEvent event) throws IOException {
+        //log out system ...
+        //...
+        anchorPane = FXMLLoader.load(getClass().getResource("/home/views/loginPage.fxml"));
+        mainAnchorPane.getChildren().add(anchorPane);
     }
 
 }
