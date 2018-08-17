@@ -14,12 +14,6 @@ public class PlanBoxController {
     private Label planNameField;
 
     @FXML
-    private JFXButton deleteTaskButton;
-
-    @FXML
-    private JFXButton startTaskButton;
-
-    @FXML
     void onDeleteTaskButtonClicked(ActionEvent event) throws IOException {
 
     }

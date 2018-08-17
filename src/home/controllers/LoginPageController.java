@@ -1,8 +1,7 @@
 package home.controllers;
-import home.database.DatabaseHandler;
-import home.models.User;
 
-import com.jfoenix.controls.JFXButton;
+import home.database.DatabaseHandler;
+
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
 import javafx.fxml.FXML;
@@ -22,19 +21,12 @@ public class LoginPageController {
     @FXML
     private JFXTextField usernameField;
 
-    @FXML
-    private JFXButton loginButton;
-
-    @FXML
-    private JFXButton signUpButton;
-
     private AnchorPane anchorPane;
 
     private String usernameValue;
     private String passwordValue;
 
-    DatabaseHandler databaseHandler;
-    User user;
+    private DatabaseHandler databaseHandler;
 
     @FXML
     void onSigUpButtonClicked(ActionEvent event) throws IOException {
@@ -45,22 +37,31 @@ public class LoginPageController {
 
     @FXML
     void onLoginButtonClicked(ActionEvent event) throws IOException {
-       if(checkFields()){
-           databaseHandler = new DatabaseHandler();
-           if(databaseHandler.login(usernameValue, passwordValue)){
-                User user = new User(usernameValue, passwordValue);
-               anchorPane = FXMLLoader.load(getClass().getResource("/home/views/mainPage.fxml"));
-               loginAnchorPane.getChildren().add(anchorPane);
-           }
-       }
+        if (checkFields()) {
+            databaseHandler = new DatabaseHandler();
+            if (databaseHandler.login(usernameValue, passwordValue)) {
+                //anchorPane = FXMLLoader.load(getClass().getResource("/home/views/mainPage.fxml"));
+                //loginAnchorPane.getChildren().add(anchorPane);
+
+                FXMLLoader loader = new FXMLLoader();
+                loader.setLocation(getClass().getResource("/home/views/mainPage.fxml"));
+
+                anchorPane = loader.load();
+
+                MainPageController mainPageController = loader.getController();
+                mainPageController.createUser(usernameValue, passwordValue);
+
+                loginAnchorPane.getChildren().add(anchorPane);
+            }
+        }
     }
 
-    void getValues(){
+    private void getValues() {
         usernameValue = usernameField.getText().trim();
         passwordValue = passwordField.getText().trim();
     }
 
-    boolean checkFields() {
+    private boolean checkFields() {
         getValues();
         if (usernameValue.isEmpty() || passwordValue.isEmpty())
             return false;

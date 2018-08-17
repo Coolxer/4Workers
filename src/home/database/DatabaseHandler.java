@@ -15,7 +15,7 @@ public class DatabaseHandler extends Config {
         return dbConnection;
     }
 
-    public void closeConnection() throws SQLException{
+    private void closeConnection() throws SQLException{
         dbConnection.close();
     }
 
@@ -39,7 +39,7 @@ public class DatabaseHandler extends Config {
         }
     }
 
-    public boolean  register(String username, String password, String email){
+    public boolean register(String username, String password, String email){
         java.util.Date dt = new java.util.Date();
 
         java.text.SimpleDateFormat simpleDateFormat = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
@@ -65,6 +65,74 @@ public class DatabaseHandler extends Config {
             System.out.println(e.getMessage());
             return false;
         }
+    }
 
+    public void getPlans(String username) {
+
+        String query = "SELECT " + DatabaseFields.PLANS_NAME + " FROM " + DatabaseFields.PLANS_TABLE + " INNER JOIN " + DatabaseFields.USERS_TABLE
+                        + " ON " + DatabaseFields.PLANS_TABLE + "." + DatabaseFields.PLANS_USER_ID + " = " + DatabaseFields.USERS_TABLE + "."
+                        + DatabaseFields.USERS_ID + " WHERE " + DatabaseFields.USERS_TABLE + "." + DatabaseFields.USERS_USERNAME + " = " + username;
+
+        int i = 0;
+
+        try {
+            Statement statement = getDbConnection().createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                i++;
+                System.out.println(resultSet.getString("planName"));
+            }
+            System.out.println(i);
+            closeConnection();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void getInProgress(String username) {
+
+        String query = "SELECT " + DatabaseFields.INPROGRESS_NAME + " FROM " + DatabaseFields.INPROGRESS_TABLE + " INNER JOIN " + DatabaseFields.USERS_TABLE
+                + " ON " + DatabaseFields.INPROGRESS_TABLE + "." + DatabaseFields.INPROGRESS_USER_ID + " = " + DatabaseFields.USERS_TABLE + "."
+                + DatabaseFields.USERS_ID + " WHERE " + DatabaseFields.USERS_TABLE + "." + DatabaseFields.USERS_USERNAME + " = " + username;
+
+        int i = 0;
+
+        try {
+            Statement statement = getDbConnection().createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                i++;
+                System.out.println(resultSet.getString("planName"));
+            }
+            System.out.println(i);
+            closeConnection();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+    public void getDone(String username) {
+
+        String query = "SELECT " + DatabaseFields.DONE_NAME + " FROM " + DatabaseFields.DONE_TABLE + " INNER JOIN " + DatabaseFields.USERS_TABLE
+                + " ON " + DatabaseFields.DONE_TABLE + "." + DatabaseFields.DONE_USER_ID + " = " + DatabaseFields.USERS_TABLE + "."
+                + DatabaseFields.USERS_ID + " WHERE " + DatabaseFields.USERS_TABLE + "." + DatabaseFields.USERS_USERNAME + " = " + username;
+
+        int i = 0;
+
+        try {
+            Statement statement = getDbConnection().createStatement();
+            ResultSet resultSet = statement.executeQuery(query);
+
+            while (resultSet.next()) {
+                i++;
+                System.out.println(resultSet.getString("planName"));
+            }
+            System.out.println(i);
+            closeConnection();
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }

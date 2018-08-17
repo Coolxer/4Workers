@@ -5,9 +5,9 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="540.0" prefWidth="660.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.views.DonePageController">
+<AnchorPane prefHeight="540.0" prefWidth="660.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.DonePageController">
    <children>
-      <Pane prefHeight="100.0" prefWidth="660.0" style="-fx-background-color: #0099ff;">
+      <Pane prefHeight="100.0" prefWidth="660.0" style="-fx-background-color: #00b300;">
          <children>
             <Label layoutX="301.0" layoutY="29.0" text="Done" textFill="#333333">
                <font>

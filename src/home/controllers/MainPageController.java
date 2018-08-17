@@ -1,48 +1,41 @@
 package home.controllers;
 
-import com.jfoenix.controls.JFXButton;
-import com.jfoenix.controls.JFXTextField;
-import javafx.fxml.FXML;
-import javafx.event.ActionEvent;
-import javafx.fxml.FXMLLoader;
+import home.models.User;
+import home.database.DatabaseHandler;
+
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
+import com.jfoenix.controls.JFXTextField;
 
-import javax.swing.text.html.ImageView;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+
+import javafx.event.ActionEvent;
 import java.io.IOException;
 
 
-public class MainPageController {
+public class MainPageController{
     @FXML
     private AnchorPane mainAnchorPane;
-
-    @FXML
-    private JFXButton plansButton;
-
-    @FXML
-    private JFXButton inProgressButton;
-
-    @FXML
-    private JFXButton doneButton;
-
-    @FXML
-    private JFXButton aboutButton;
-
-    @FXML
-    private JFXButton exitButton;
 
     @FXML
     private JFXTextField usernameField;
 
     @FXML
-    private JFXButton logOutButton;
-
-    @FXML
     private Pane switchPane;
 
-    private AnchorPane anchorPane;
     private Pane newPane;
+
+    private AnchorPane anchorPane;
+
+    private User user;
+    private DatabaseHandler databaseHandler;
+
+    public void createUser(String username, String password) {
+        user = new User(username, password);
+        usernameField.setText(user.getUsername());
+    }
 
     @FXML
     void onAboutButtonClicked(ActionEvent event) throws IOException {
@@ -54,6 +47,9 @@ public class MainPageController {
     void onDoneButtonClicked(ActionEvent event) throws IOException {
         newPane = FXMLLoader.load(getClass().getResource("/home/views/donePage.fxml"));
         switchPane.getChildren().add(newPane);
+
+        databaseHandler = new DatabaseHandler();
+        databaseHandler.getDone(user.getUsername());
     }
 
     @FXML
@@ -66,12 +62,18 @@ public class MainPageController {
     void onInProgressButtonClicked(ActionEvent event) throws IOException {
         newPane = FXMLLoader.load(getClass().getResource("/home/views/inProgressPage.fxml"));
         switchPane.getChildren().add(newPane);
+
+        databaseHandler = new DatabaseHandler();
+        databaseHandler.getInProgress(user.getUsername());
     }
 
     @FXML
     void onPlansButtonClicked(ActionEvent event) throws IOException {
         newPane = FXMLLoader.load(getClass().getResource("/home/views/plansPage.fxml"));
         switchPane.getChildren().add(newPane);
+
+        databaseHandler = new DatabaseHandler();
+        databaseHandler.getPlans(user.getUsername());
     }
 
     @FXML

@@ -1,13 +1,9 @@
 package home.controllers;
 
-import com.jfoenix.controls.JFXButton;
 import com.jfoenix.controls.JFXPasswordField;
 import com.jfoenix.controls.JFXTextField;
-import com.jfoenix.validation.RequiredFieldValidator;
 import home.database.DatabaseHandler;
 
-import javafx.beans.value.ChangeListener;
-import javafx.beans.value.ObservableValue;
 import javafx.fxml.FXML;
 
 import javafx.event.ActionEvent;
@@ -15,8 +11,6 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.layout.AnchorPane;
 
 import java.io.IOException;
-
-import javax.xml.validation.*;
 
 public class RegisterPageController {
     @FXML
@@ -33,12 +27,6 @@ public class RegisterPageController {
 
     @FXML
     private JFXTextField emailField;
-
-    @FXML
-    private JFXButton signUpButton;
-
-    @FXML
-    private JFXButton loginButton;
 
     private AnchorPane anchorPane;
 

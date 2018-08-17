@@ -17,7 +17,7 @@
             <Font name="Haettenschweiler" size="26.0" />
          </font>
       </Label>
-      <JFXButton fx:id="deleteTaskButton" layoutX="433.0" layoutY="5.0" onAction="#onDeleteTaskButtonClicked" style="-fx-background-color: #cc0000;" text="Delete" textFill="#333333">
+      <JFXButton fx:id="deleteTaskButton" layoutX="430.0" layoutY="5.0" onAction="#onDeleteTaskButtonClicked" style="-fx-background-color: #cc0000;" text="Delete" textFill="WHITE">
          <font>
             <Font name="Haettenschweiler" size="22.0" />
          </font>
