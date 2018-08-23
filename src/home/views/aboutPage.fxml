@@ -1,31 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Shadow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane prefHeight="540.0" prefWidth="660.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.AboutPageController">
+<AnchorPane prefHeight="540.0" prefWidth="660.0" style="-fx-background-color: #737373;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.AboutPageController">
    <children>
-      <Pane prefHeight="100.0" prefWidth="660.0" style="-fx-background-color: #737373;">
+      <Pane prefHeight="100.0" prefWidth="660.0" style="-fx-background-color: #333333;">
          <children>
-            <Label layoutX="294.0" layoutY="29.0" text="About" textFill="#333333">
+            <Label layoutX="294.0" layoutY="29.0" text="ABOUT" textFill="#fff8f8" underline="true">
                <font>
                   <Font name="Haettenschweiler" size="40.0" />
                </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
             </Label>
          </children>
       </Pane>
-      <Text fill="WHITE" layoutX="45.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This application allows you to store your plans, things that you are working on and the ended projects." wrappingWidth="615.203125">
+      <Text fill="WHITE" layoutX="45.0" layoutY="160.0" strokeType="OUTSIDE" strokeWidth="0.0" text="This application allows you to store your plans, things that you are working on and the ended projects." wrappingWidth="615.203125">
          <font>
             <Font name="System Italic" size="30.0" />
          </font>
+         <effect>
+            <Shadow height="0.0" radius="0.0" width="0.0">
+               <input>
+                  <DropShadow />
+               </input>
+            </Shadow>
+         </effect>
       </Text>
-      <Text fill="WHITE" layoutX="45.0" layoutY="280.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4Workers is a project introduced on a MIT License. You can see source code on https://github.com/Coolxer/4Workers" wrappingWidth="595.203125">
+      <Text fill="WHITE" layoutX="45.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4Workers is a project introduced on a MIT License. You can see source code on https://github.com/Coolxer/4Workers" wrappingWidth="595.203125">
          <font>
             <Font name="System Italic" size="30.0" />
          </font>
+         <effect>
+            <DropShadow height="20.0" radius="9.5" width="20.0" />
+         </effect>
       </Text>
    </children>
 </AnchorPane>

@@ -3,7 +3,11 @@
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXPasswordField?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
@@ -14,35 +18,53 @@
          <font>
             <Font name="Haettenschweiler" size="50.0" />
          </font>
+         <effect>
+            <DropShadow />
+         </effect>
       </Label>
       <Label layoutX="434.0" layoutY="110.0" text="username" textFill="#0099ff">
          <font>
             <Font name="Haettenschweiler" size="30.0" />
          </font>
+         <effect>
+            <Glow />
+         </effect>
       </Label>
       <JFXTextField fx:id="usernameField" focusColor="#0099ff" layoutX="327.0" layoutY="140.0" prefHeight="25.0" prefWidth="300.0" promptText="username" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
       <Label layoutX="430.0" layoutY="190.0" text="password" textFill="#0099ff">
          <font>
             <Font name="Haettenschweiler" size="30.0" />
          </font>
+         <effect>
+            <Glow />
+         </effect>
       </Label>
       <JFXPasswordField fx:id="passwordField" focusColor="#0099ff" layoutX="326.0" layoutY="220.0" prefHeight="25.0" prefWidth="300.0" promptText="password" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
       <Label layoutX="391.0" layoutY="270.0" text="confirm password" textFill="#0099ff">
          <font>
             <Font name="Haettenschweiler" size="30.0" />
          </font>
+         <effect>
+            <Glow />
+         </effect>
       </Label>
       <JFXPasswordField fx:id="confirmPasswordField" focusColor="#0099ff" layoutX="326.0" layoutY="300.0" prefHeight="25.0" prefWidth="300.0" promptText="password" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
       <Label layoutX="449.0" layoutY="350.0" text="e-mail" textFill="#0099ff">
          <font>
             <Font name="Haettenschweiler" size="30.0" />
          </font>
+         <effect>
+            <Glow />
+         </effect>
       </Label>
       <JFXTextField fx:id="emailField" focusColor="#0099ff" layoutX="326.0" layoutY="380.0" prefHeight="25.0" prefWidth="300.0" promptText="e-mail" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
       <JFXButton fx:id="signUpButton" layoutX="326.0" layoutY="435.0" onAction="#onSignUpButtonClicked" prefHeight="40.0" prefWidth="300.0" style="-fx-background-color: #ff8000;" text="Sign up" textFill="WHITE">
          <font>
             <Font name="Haettenschweiler" size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
       <Text fill="WHITE" layoutX="335.0" layoutY="519.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Have an account?">
          <font>
@@ -53,6 +75,14 @@
          <font>
             <Font name="Haettenschweiler" size="24.0" />
          </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
       </JFXButton>
+      <FontAwesomeIcon fill="WHITE" iconName="USER_PLUS" layoutX="562.0" layoutY="74.0" size="50">
+         <effect>
+            <DropShadow />
+         </effect></FontAwesomeIcon>
+      <FontAwesomeIcon fill="WHITE" iconName="SIGN_IN" layoutX="401.0" layoutY="465.0" size="25" />
    </children>
 </AnchorPane>

@@ -2,11 +2,11 @@ package home.models;
 
 public class Task {
     private String name;
-    private TaskStates taskState;
+    private String status;
 
-    public Task( String name) {
+    public Task(String name, String status) {
         this.name = name;
-        taskState = TaskStates.PLAN;
+        this.status = status;
     }
 
     public String getName() {
@@ -17,11 +17,26 @@ public class Task {
         this.name = name;
     }
 
-    public TaskStates getTaskState() {
-        return taskState;
+    public String getStatus() {
+        return status;
     }
 
-    public void setTaskState(TaskStates taskState) {
-        this.taskState = taskState;
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
+    @Override
+    public boolean equals(Object obj){
+        if (obj == null) {
+            return false;
+        }
+        if (getClass() != obj.getClass()) {
+            return false;
+        }
+        final Task other = (Task) obj;
+        if (this.name != other.name && (this.name == null || !this.name.equals(other.name))) {
+            return false;
+        }
+        return true;
     }
 }

@@ -2,21 +2,19 @@
 
 <?import com.jfoenix.controls.JFXButton?>
 <?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.Separator?>
-<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
-<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
 <AnchorPane fx:id="mainAnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="540.0" prefWidth="960.0" style="-fx-background-color: #333333;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.MainPageController">
    <children>
-      <Separator layoutX="860.0" orientation="VERTICAL" prefHeight="540.0" />
       <Pane prefHeight="540.0" prefWidth="200.0" style="-fx-background-color: #0099ff;">
          <children>
-            <Pane prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #333333; -fx-border-color: #FFFFFF; -fx-border-width: 5;">
+            <Pane maxHeight="100.0" maxWidth="200.0" prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: #333333; -fx-border-color: #FFFFFF; -fx-border-width: 5;">
                <children>
                   <Label alignment="CENTER" layoutX="53.0" layoutY="25.0" text="WORKERS" textFill="WHITE">
                      <font>
@@ -28,47 +26,73 @@
                         <Font name="Haettenschweiler" size="40.0" />
                      </font>
                   </Label>
-                  <VBox layoutY="100.0" prefHeight="440.0" prefWidth="200.0">
-                     <children>
-                        <JFXButton fx:id="plansButton" onAction="#onPlansButtonClicked" prefHeight="88.0" prefWidth="200.0" text="Plans" textFill="WHITE">
-                           <font>
-                              <Font name="Haettenschweiler" size="30.0" />
-                           </font></JFXButton>
-                        <JFXButton fx:id="inProgressButton" onAction="#onInProgressButtonClicked" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #ff9900;" text="In progress" textFill="WHITE">
-                           <font>
-                              <Font name="Haettenschweiler" size="30.0" />
-                           </font></JFXButton>
-                        <JFXButton fx:id="doneButton" onAction="#onDoneButtonClicked" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #00b300;" text="Done" textFill="WHITE">
-                           <font>
-                              <Font name="Haettenschweiler" size="30.0" />
-                           </font></JFXButton>
-                        <JFXButton fx:id="aboutButton" onAction="#onAboutButtonClicked" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #737373;" text="About" textFill="WHITE">
-                           <font>
-                              <Font name="Haettenschweiler" size="30.0" />
-                           </font></JFXButton>
-                        <JFXButton fx:id="exitButton" onAction="#onExitButtonClicked" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #cc0000;" text="Exit" textFill="WHITE">
-                           <font>
-                              <Font name="Haettenschweiler" size="30.0" />
-                           </font></JFXButton>
-                     </children>
-                  </VBox>
+                  <JFXButton fx:id="plansButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutY="100.0" onAction="#onPlansButtonClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="88.0" prefWidth="200.0" text="Plans" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Haettenschweiler" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="inProgressButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutY="188.0" onAction="#onInProgressButtonClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #ff9900;" text="In progress" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Haettenschweiler" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="doneButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutY="276.0" onAction="#onDoneButtonClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #00b300;" text="Done" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Haettenschweiler" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="aboutButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutY="364.0" onAction="#onAboutButtonClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #737373;" text="About" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Haettenschweiler" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <JFXButton fx:id="exitButton" alignment="CENTER_RIGHT" buttonType="RAISED" layoutY="452.0" onAction="#onExitButtonClicked" onMouseEntered="#onMouseEntered" onMouseExited="#onMouseExited" prefHeight="88.0" prefWidth="200.0" style="-fx-background-color: #cc0000;" text="Exit" textFill="WHITE" underline="true">
+                     <font>
+                        <Font name="Haettenschweiler" size="30.0" />
+                     </font>
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </JFXButton>
+                  <FontAwesomeIcon fill="WHITE" iconName="SEND" layoutX="15.0" layoutY="161.0" size="50" />
+                  <FontAwesomeIcon fill="WHITE" iconName="REFRESH" layoutX="15.0" layoutY="249.0" size="50" />
+                  <FontAwesomeIcon fill="WHITE" iconName="TROPHY" layoutX="14.0" layoutY="337.0" size="50" />
+                  <FontAwesomeIcon fill="WHITE" iconName="INFO" layoutX="27.0" layoutY="425.0" size="50" />
+                  <FontAwesomeIcon fill="WHITE" iconName="TIMES_CIRCLE" layoutX="14.0" layoutY="513.0" size="50" />
                </children>
             </Pane>
          </children>
       </Pane>
-      <Pane fx:id="switchPane" layoutX="200.0" prefHeight="540.0" prefWidth="660.0">
+      <Pane fx:id="switchPane" layoutX="200.0" prefHeight="540.0" prefWidth="645.0" style="-fx-border-color: #FFFFFF; -fx-border-width: 5;">
          <children>
-            <Text fill="#737373" layoutX="128.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4WORKERS">
+            <Text fill="#737373" layoutX="91.0" layoutY="315.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4WORKERS">
                <font>
                   <Font name="Haettenschweiler" size="120.0" />
                </font>
             </Text>
-         </children></Pane>
-      <ImageView fitHeight="80.0" fitWidth="80.0" layoutX="870.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" />
-      <JFXTextField fx:id="usernameField" editable="false" layoutX="870.0" layoutY="100.0" prefHeight="25.0" prefWidth="80.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
-      <JFXButton fx:id="logOutButton" layoutX="871.0" layoutY="147.0" onAction="#onLogOutButtonClicked" style="-fx-background-color: #0099ff;" text="Log out">
+            <FontAwesomeIcon fill="#0099ff" iconName="EDIT" layoutX="505.0" layoutY="315.0" size="110" />
+         </children>
+      </Pane>
+      <JFXTextField fx:id="usernameField" alignment="CENTER" editable="false" layoutX="870.0" layoutY="100.0" prefHeight="25.0" prefWidth="80.0" style="-fx-text-fill: #FFFFFF;" unFocusColor="WHITE" />
+      <JFXButton fx:id="logOutButton" buttonType="RAISED" layoutX="871.0" layoutY="147.0" onAction="#onLogOutButtonClicked" style="-fx-background-color: #0099ff;" text="Log out">
          <font>
             <Font name="Haettenschweiler" size="22.0" />
-         </font></JFXButton>
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></JFXButton>
+      <FontAwesomeIcon fill="WHITE" iconName="USER" layoutX="879.0" layoutY="83.0" size="80" />
    </children>
 </AnchorPane>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="mainTasksPane" prefHeight="540.0" prefWidth="660.0" style="-fx-background-color: #0099ff;" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.controllers.TasksPageController">
+   <children>
+      <Pane fx:id="tasksPagePane" prefHeight="100.0" prefWidth="660.0" style="-fx-background-color: #0099ff;">
+         <children>
+            <JFXTextField fx:id="taskStateLine" alignment="CENTER" editable="false" layoutX="255.0" layoutY="15.0" prefHeight="40.0" prefWidth="150.0" style="-fx-text-fill: #333333;" text="PLANS" unFocusColor="#333333">
+               <font>
+                  <Font name="Haettenschweiler" size="40.0" />
+               </font>
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+            </JFXTextField>
+            <FontAwesomeIcon fill="WHITE" iconName="SEND" layoutX="450.0" layoutY="76.0" size="75">
+               <effect>
+                  <DropShadow height="26.93" radius="18.1525" width="47.68" />
+               </effect>
+            </FontAwesomeIcon>
+         </children>
+      </Pane>
+      <Pane fx:id="addPanel" layoutY="490.0" prefHeight="50.0" prefWidth="660.0" style="-fx-background-color: #0099ff;">
+         <children>
+            <Label layoutX="68.0" layoutY="3.0" text="Name" textFill="#333333">
+               <font>
+                  <Font name="Haettenschweiler" size="30.0" />
+               </font>
+               <effect>
+                  <Glow />
+               </effect>
+            </Label>
+            <JFXButton alignment="BASELINE_LEFT" buttonType="RAISED" layoutX="525.0" onAction="#onAddPlanButtonClicked" prefHeight="40.0" prefWidth="110.0" style="-fx-background-color: #333333;" text="Add Plan" textFill="WHITE">
+               <font>
+                  <Font name="Haettenschweiler" size="22.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></JFXButton>
+            <JFXTextField fx:id="taskNameTextField" layoutX="190.0" layoutY="8.0" prefHeight="25.0" prefWidth="280.0" style="-fx-background-color: #FFFFFF;">
+               <effect>
+                  <DropShadow height="15.0" offsetX="1.0" offsetY="1.0" radius="7.0" width="15.0" />
+               </effect></JFXTextField>
+            <FontAwesomeIcon fill="WHITE" iconName="PLUS_CIRCLE" layoutX="605.0" layoutY="29.0" selectionEnd="1" size="25" />
+         </children>
+      </Pane>
+      <TableView fx:id="tableView" layoutX="10.0" layoutY="110.0" prefHeight="370.0" prefWidth="640.0" style="-fx-background-color: #737373; -fx-border-color: #333333; -fx-border-width: 5;">
+        <columns>
+          <TableColumn fx:id="tableViewNameCol" prefWidth="320.0" text="Name" />
+          <TableColumn fx:id="tableViewDeleteCol" prefWidth="160.0" text="Delete" />
+            <TableColumn fx:id="tableViewStartCol" prefWidth="160.0" text="Start" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
