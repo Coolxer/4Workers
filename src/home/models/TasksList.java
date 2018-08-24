@@ -30,10 +30,6 @@ public class TasksList {
         return list;
     }
 
-    public int getListSize(){
-        return list.size();
-    }
-
     public void removeTask(int id, String status) {
         ObservableList<Task> helpList = tasksDatabase.getTasksList(status);
 

@@ -1,64 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="4Workers" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/home/controllers/TasksPageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/home/views/tasksPage.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/4Workers.iml" beforeDir="false" afterPath="$PROJECT_DIR$/4Workers.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/AddPlanController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/DonePageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/DonePlanBoxController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/InProgressPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/InProgressPlanBoxController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/LoginPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/controllers/LoginPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/PlanBoxController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/PlansPageController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/RegisterPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/controllers/RegisterPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/controllers/mainPageController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/controllers/mainPageController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/database/DatabaseFields.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/database/Databasehandler.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/database/Databasehandler.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/models/Task.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/models/Task.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/models/TaskStates.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/models/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/models/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/addPlan.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/donePage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/donePlanBox.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/inProgressPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/inProgressPlanBox.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/loginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/views/loginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/views/mainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/planBox.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/plansPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/4Workers/home/views/registerPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/4Workers/home/views/registerPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/AddPlanController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/DonePageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/DonePlanBoxController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/InProgressPageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/InProgressPlanBoxController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/LoginPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/controllers/LoginPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/MainPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/controllers/MainPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/PlanBoxController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/PlansPageController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/controllers/RegisterPageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/controllers/RegisterPageController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/database/DatabaseFields.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/database/DatabaseHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/database/DatabaseHandler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/home/models/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/models/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/models/TaskStates.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/models/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/models/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/aboutPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/views/aboutPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/addPlan.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/donePage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/donePlanBox.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/inProgressPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/inProgressPlanBox.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/loginPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/views/loginPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/mainPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/views/mainPage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/planBox.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/plansPage.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/home/views/registerPage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/views/registerPage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/home/models/TasksList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/home/models/TasksList.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -114,7 +65,7 @@
     <session id="-1193161054">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="49" />
+          <entry key="project.closed" value="51" />
           <entry key="project.open.time.10" value="1" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.12" value="3" />
@@ -131,6 +82,7 @@
           <entry key="project.open.time.27" value="1" />
           <entry key="project.open.time.28" value="1" />
           <entry key="project.open.time.29" value="1" />
+          <entry key="project.open.time.30" value="1" />
           <entry key="project.open.time.31" value="1" />
           <entry key="project.open.time.34" value="1" />
           <entry key="project.open.time.36" value="2" />
@@ -144,7 +96,7 @@
           <entry key="project.open.time.48" value="1" />
           <entry key="project.open.time.51" value="1" />
           <entry key="project.open.time.63" value="1" />
-          <entry key="project.opened" value="50" />
+          <entry key="project.opened" value="51" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -152,14 +104,14 @@
           <entry key="class" value="1" />
           <entry key="css" value="1" />
           <entry key="fxml" value="90" />
-          <entry key="java" value="223" />
+          <entry key="java" value="231" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CLASS" value="1" />
           <entry key="CSS" value="1" />
-          <entry key="JAVA" value="223" />
+          <entry key="JAVA" value="231" />
           <entry key="XML" value="90" />
         </counts>
       </usages-collector>
@@ -183,7 +135,17 @@
     <favorites_list name="JavaFxApplication" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/home/controllers/LoginPageController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="60">
+              <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -199,6 +161,8 @@
       <find>user</find>
       <find>TasksList</find>
       <find>start</find>
+      <find>getTas</find>
+      <find>getList</find>
     </findStrings>
   </component>
   <component name="FindManager">
@@ -255,12 +219,12 @@
         <option value="$PROJECT_DIR$/src/home/controllers/MainPageController.java" />
         <option value="$PROJECT_DIR$/src/home/controllers/TasksPageController.java" />
         <option value="$PROJECT_DIR$/src/home/database/DatabaseHandler.java" />
-        <option value="$PROJECT_DIR$/src/home/models/Task.java" />
-        <option value="$PROJECT_DIR$/src/home/models/TasksList.java" />
         <option value="$PROJECT_DIR$/src/home/models/TasksDatabase.java" />
         <option value="$PROJECT_DIR$/src/home/models/User.java" />
         <option value="$PROJECT_DIR$/src/home/models/UsersList.java" />
         <option value="$PROJECT_DIR$/src/home/models/UsersDatabase.java" />
+        <option value="$PROJECT_DIR$/src/home/models/Task.java" />
+        <option value="$PROJECT_DIR$/src/home/models/TasksList.java" />
       </list>
     </option>
   </component>
@@ -281,7 +245,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -313,13 +276,6 @@
               <item name="4Workers" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="home" type="462c0819:PsiDirectoryNode" />
-              <item name="database" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="4Workers" type="b2602c69:ProjectViewProjectNode" />
-              <item name="4Workers" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="home" type="462c0819:PsiDirectoryNode" />
               <item name="models" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -333,6 +289,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -345,10 +302,10 @@
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535033960010" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1535051655165" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/fontawesomefx-8.1.jar!/" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="recentsLimit" value="5" />
@@ -470,8 +427,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17697228" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.17857143" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" weight="0.32995737" />
       <window_info id="Designer" order="3" />
@@ -480,7 +438,7 @@
       <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.06616052" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.1670282" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.1670282" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3991323" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -620,13 +578,7 @@
     <entry file="file://$PROJECT_DIR$/src/home/controllers/DonePlanBoxController.java" />
     <entry file="file://$PROJECT_DIR$/src/home/controllers/InProgressPageController.java" />
     <entry file="file://$PROJECT_DIR$/src/home/controllers/InProgressPlanBoxController.java" />
-    <entry file="file://$PROJECT_DIR$/src/home/models/TaskStates.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="27" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/models/TaskStates.java" />
     <entry file="file://$PROJECT_DIR$/src/home/models/TaskData.java" />
     <entry file="file://$PROJECT_DIR$/src/home/views/planBox.fxml" />
     <entry file="jar://$PROJECT_DIR$/lib/mysql-connector-java-8.0.12.jar!/com/mysql/cj/jdbc/exceptions/SQLError.class">
@@ -672,27 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/controllers/LoginPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="13" column="38" selection-start-line="13" selection-start-column="38" selection-end-line="13" selection-end-column="38" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/controllers/RegisterPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="13" selection-start-column="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#checkFields#0;class#RegisterPageController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/home/database/Config.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
@@ -700,95 +631,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/database/DatabaseFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="12" column="59" selection-start-line="12" selection-start-column="59" selection-end-line="12" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/database/DatabaseFields.java" />
     <entry file="file://$PROJECT_DIR$/src/home/database/DatabaseHandler.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="3" column="30" lean-forward="true" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/controllers/TasksPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1827">
-          <caret line="163" column="9" selection-start-line="163" selection-start-column="9" selection-end-line="163" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#init#0;class#TasksPageController#0" />
-            <element signature="method#initColumns#0;class#TasksPageController#0" />
-            <element signature="method#initTable#0;class#TasksPageController#0" />
-            <element signature="method#onAddPlanButtonClicked#0;class#TasksPageController#0" />
-            <element signature="method#setHeader#0;class#TasksPageController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/controllers/MainPageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1714">
-          <caret line="98" column="9" lean-forward="true" selection-start-line="98" selection-start-column="9" selection-end-line="98" selection-end-column="9" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#initializeTasksPage#0;class#MainPageController#0" />
-            <element signature="method#logout#0;class#MainPageController#0" />
-            <element signature="method#onAboutButtonClicked#0;class#MainPageController#0" />
-            <element signature="method#onDoneButtonClicked#0;class#MainPageController#0" />
-            <element signature="method#onExitButtonClicked#0;class#MainPageController#0" />
-            <element signature="method#onInProgressButtonClicked#0;class#MainPageController#0" />
-            <element signature="method#onLogOutButtonClicked#0;class#MainPageController#0" />
-            <element signature="method#onMouseEntered#0;class#MainPageController#0" />
-            <element signature="method#onMouseExited#0;class#MainPageController#0" />
-            <element signature="method#onPlansButtonClicked#0;class#MainPageController#0" />
-            <element signature="method#setCurrentUser#0;class#MainPageController#0" />
-            <element signature="method#showTasksPage#0;class#MainPageController#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/models/Task.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="78">
-          <caret line="3" column="24" lean-forward="true" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
-          <folding>
-            <element signature="method#Task#0;class#Task#0" />
-            <element signature="method#equals#0;class#Task#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/models/TasksDatabase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="32" column="5" lean-forward="true" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#TasksDatabase#0;class#TasksDatabase#0" />
-            <element signature="method#changeTaskStatus#0;class#TasksDatabase#0" />
-            <element signature="method#getTasksList#0;class#TasksDatabase#0" />
-            <element signature="method#getUserId#0;class#TasksDatabase#0" />
-            <element signature="method#registerTask#0;class#TasksDatabase#0" />
-            <element signature="method#removeTask#0;class#TasksDatabase#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/home/models/TasksList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="40" lean-forward="true" selection-start-line="7" selection-start-column="40" selection-end-line="7" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addTask#0;class#TasksList#0" />
-            <element signature="method#changeTaskStatus#0;class#TasksList#0" />
-            <element signature="method#getList#0;class#TasksList#0" />
-            <element signature="method#removeTask#0;class#TasksList#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -816,15 +663,110 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/controllers/MainPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="404">
+          <caret line="49" column="51" lean-forward="true" selection-start-line="49" selection-start-column="51" selection-end-line="49" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#logout#0;class#MainPageController#0" />
+            <element signature="method#onAboutButtonClicked#0;class#MainPageController#0" />
+            <element signature="method#onDoneButtonClicked#0;class#MainPageController#0" />
+            <element signature="method#onExitButtonClicked#0;class#MainPageController#0" />
+            <element signature="method#onInProgressButtonClicked#0;class#MainPageController#0" />
+            <element signature="method#onLogOutButtonClicked#0;class#MainPageController#0" />
+            <element signature="method#onMouseEntered#0;class#MainPageController#0" />
+            <element signature="method#onMouseExited#0;class#MainPageController#0" />
+            <element signature="method#onPlansButtonClicked#0;class#MainPageController#0" />
+            <element signature="method#setCurrentUser#0;class#MainPageController#0" />
+            <element signature="method#showTasksPage#0;class#MainPageController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/models/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="130">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
+          <folding>
+            <element signature="method#Task#0;class#Task#0" />
+            <element signature="method#equals#0;class#Task#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/controllers/TasksPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="30" column="31" selection-start-line="30" selection-start-column="31" selection-end-line="30" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#init#0;class#TasksPageController#0" />
+            <element signature="method#initColumns#0;class#TasksPageController#0" />
+            <element signature="method#initTable#0;class#TasksPageController#0" />
+            <element signature="method#onAddPlanButtonClicked#0;class#TasksPageController#0" />
+            <element signature="method#setHeader#0;class#TasksPageController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/home/models/UsersDatabase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="589">
-          <caret line="62" lean-forward="true" selection-start-line="62" selection-end-line="62" />
+        <state relative-caret-position="390">
+          <caret line="17" column="28" lean-forward="true" selection-start-line="17" selection-start-column="28" selection-end-line="17" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#getUsersList#0;class#UsersDatabase#0" />
             <element signature="method#registerUser#0;class#UsersDatabase#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/models/TasksDatabase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="368">
+          <caret line="32" column="5" selection-start-line="32" selection-start-column="5" selection-end-line="32" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#TasksDatabase#0;class#TasksDatabase#0" />
+            <element signature="method#changeTaskStatus#0;class#TasksDatabase#0" />
+            <element signature="method#getTasksList#0;class#TasksDatabase#0" />
+            <element signature="method#getUserId#0;class#TasksDatabase#0" />
+            <element signature="method#registerTask#0;class#TasksDatabase#0" />
+            <element signature="method#removeTask#0;class#TasksDatabase#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/models/TasksList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="25" column="5" lean-forward="true" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#addTask#0;class#TasksList#0" />
+            <element signature="method#changeTaskStatus#0;class#TasksList#0" />
+            <element signature="method#getList#0;class#TasksList#0" />
+            <element signature="method#removeTask#0;class#TasksList#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/controllers/RegisterPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#checkFields#0;class#RegisterPageController#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/home/controllers/LoginPageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="2" column="24" lean-forward="true" selection-start-line="2" selection-start-column="24" selection-end-line="2" selection-end-column="24" />
         </state>
       </provider>
     </entry>
@@ -834,11 +776,12 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>JavaFXApp</last-edited>
+          <last-edited>4Workers</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
                 <option value="0.2" />
+                <option value="0.5" />
               </list>
             </option>
           </splitter-proportions>
